@@ -183,9 +183,18 @@
             <p class="lead mb-4">Приєднуйтесь до челенджу вже сьогодні!</p>
             
             <!-- Замените ссылку на вашего Telegram-бота -->
-            <a href="https://t.me/kazarian_30dniv_bot" class="btn-register" target="_blank">
-                <i class="bi bi-telegram me-2"></i> Зареєструватися через Telegram
-            </a>
+<a href="https://t.me/kazarian_30dniv_bot" 
+   class="btn-register" 
+   target="_blank"
+   onclick="
+      fbq('track', 'Lead');
+      setTimeout(function(){
+         window.open('https://t.me/kazarian_30dniv_bot', '_blank');
+      }, 300);
+      return false;
+   ">
+   <i class="bi bi-telegram me-2"></i> Зареєструватися через Telegram
+</a>
             
             <p class="mt-3 text-muted">Реєстрація займе лише кілька хвилин</p>
         </div>
