@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Громадська організація «Центр «Джерело» | 30 днів без алкоголю</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Мінімальні нові стилі, яких немає в style.css */
+        .org-hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1a2530 100%);
+            color: white;
+            padding: 60px 0 40px;
+            border-radius: 0 0 20px 20px;
+            margin-bottom: 30px;
+        }
+        .org-hero h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+        }
+        .org-hero .lead {
+            font-size: 1.15rem;
+            color: rgba(255,255,255,0.85);
+        }
+        .org-breadcrumb {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 15px;
+        }
+        .org-breadcrumb a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+        }
+        .org-breadcrumb a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+        .org-docs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 14px;
+            margin: 20px 0 10px;
+        }
+        .org-doc {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 16px 20px;
+            background: #fff;
+            border: 1px solid #e8dfd0;
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--dark-text);
+            transition: all 0.3s ease;
+        }
+        .org-doc:hover {
+            border-color: var(--secondary-color);
+            box-shadow: 0 6px 18px -10px rgba(52,152,219,0.35);
+            transform: translateY(-2px);
+        }
+        .org-doc .ic {
+            font-size: 26px;
+            color: var(--secondary-color);
+        }
+        .org-doc b {
+            display: block;
+            font-size: 0.95rem;
+            color: var(--dark-text);
+        }
+        .org-doc small {
+            color: var(--light-text);
+            font-size: 0.8rem;
+        }
+        .org-check-list {
+            list-style: none;
+            padding: 0;
+        }
+        .org-check-list li {
+            padding: 6px 0 6px 28px;
+            position: relative;
+            color: var(--dark-text);
+        }
+        .org-check-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 6px;
+            color: var(--secondary-color);
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        .org-section-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+        }
+        .org-section-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .org-section-card h2 {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .org-section-card h2 i {
+            color: var(--secondary-color);
+            margin-right: 12px;
+        }
+        .org-section-card h3 {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        .org-section-card p {
+            color: var(--dark-text);
+        }
+        @media (max-width: 768px) {
+            .org-hero {
+                padding: 40px 0 30px;
+                border-radius: 0 0 15px 15px;
+            }
+            .org-section-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Герой-секція (стилізована під index.html) -->
+    <section class="org-hero text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <p class="org-breadcrumb"><a href="/">Головна</a> · Організація</p>
+                    <h1 class="display-4 fw-bold mb-3">Громадська організація «Центр «Джерело»</h1>
+                    <p class="lead mb-0">Неприбуткова громадська організація, у межах діяльності якої працює проєкт «30 днів без алкоголю».</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container py-3">
+
+        <!-- Місія -->
+        <div class="org-section-card">
+            <h2><i class="bi bi-bullseye"></i> Наша місія</h2>
+            <p class="lead" style="font-size:1.15rem; color:var(--primary-color);"><strong>Повертати людині опору, а родині цілісність.</strong> Ми допомагаємо тим, хто опинився в кризі поруч із залежністю, війною або втратою, і робимо цю допомогу доступною безоплатно.</p>
+            <p>Ми виходимо з того, що людина в кризі рідко страждає наодинці. Поруч завжди є родина, яка виснажується мовчки і найчастіше не отримує жодної підтримки. Тому ми працюємо не з окремим симптомом, а з усією системою стосунків навколо людини.</p>
+            <p><strong>Три принципи, на яких тримається наша робота:</strong></p>
+            <ul class="org-check-list">
+                <li><strong>Допомога має бути доступною.</strong> Наші програми безоплатні. Людина у скруті не повинна вибирати між підтримкою і грошима на життя.</li>
+                <li><strong>Родина не винна, але саме родина впливає.</strong> Ми не шукаємо винних, ми повертаємо рідним здатність діяти і право на власне життя.</li>
+                <li><strong>Гідність важливіша за діагноз.</strong> Ми говоримо з людьми без осуду і зменшуємо стигму навколо звернення по психологічну допомогу.</li>
+            </ul>
+            <p class="mb-0">Кінцева мета організації: щоб родина, яка пройшла через кризу, не просто вистояла, а відновила здатність жити своє життя далі.</p>
+        </div>
+
+        <!-- Хто ми -->
+        <div class="org-section-card">
+            <h2><i class="bi bi-people"></i> Хто ми</h2>
+            <p><strong>Громадська організація «Центр «Джерело»</strong> має статус неприбуткової та зареєстрована відповідно до законодавства України. Організація об'єднує людей, які допомагають родинам у складних життєвих обставинах: працюють із психологічними наслідками залежності близької людини, підтримують родини військових, внутрішньо переміщених осіб та родини загиблих.</p>
+            <p class="mb-0">Проєкт «30 днів без алкоголю» є одним із проєктів організації і працює безкоштовно, у межах її статутної діяльності.</p>
+        </div>
+
+        <!-- Реквізити -->
+        <div class="org-section-card">
+            <h2><i class="bi bi-file-text"></i> Реквізити</h2>
+            <ul class="org-check-list">
+                <li><strong>Повне найменування:</strong> Громадська організація «Центр «Джерело»</li>
+                <li><strong>Скорочене найменування:</strong> ГО «Центр «Джерело»</li>
+                <li><strong>Код ЄДРПОУ:</strong> 35328109</li>
+                <li><strong>Дата державної реєстрації:</strong> 14 липня 2008 року</li>
+                <li><strong>Заснована:</strong> 2006 рік</li>
+                <li><strong>Статус:</strong> неприбуткова організація</li>
+                <li><strong>Керівник:</strong> Казарʼян Павло Ашотович</li>
+            </ul>
+        </div>
+
+        <!-- Напрями діяльності -->
+        <div class="org-section-card">
+            <h2><i class="bi bi-diagram-3"></i> Напрями діяльності за статутом</h2>
+            <ul class="org-check-list">
+                <li>соціальний, психологічний і педагогічний супровід людей у кризових обставинах;</li>
+                <li>підтримка родин, дітей військовослужбовців, внутрішньо переміщених осіб і родин загиблих;</li>
+                <li>освітні програми, тренінги, семінари та вебінари;</li>
+                <li>профілактика суїцидальної поведінки, насильства та булінгу;</li>
+                <li>просвітницька діяльність і зменшення стигми щодо звернення по психологічну допомогу;</li>
+                <li>впровадження онлайн-форматів підтримки: навчальні курси, чат-боти, психологічні тренажери.</li>
+            </ul>
+        </div>
+
+        <!-- Документи -->
+        <div class="org-section-card">
+            <h2><i class="bi bi-files"></i> Документи</h2>
+            <p>Установчі та реєстраційні документи організації доступні для ознайомлення.</p>
+            <div class="org-docs">
+                <a class="org-doc" href="docs/statut.pdf" target="_blank" rel="noopener">
+                    <span class="ic"><i class="bi bi-file-pdf"></i></span>
+                    <span><b>Статут організації</b><small>чинна редакція, PDF</small></span>
+                </a>
+                <a class="org-doc" href="docs/vytiah-edr.pdf" target="_blank" rel="noopener">
+                    <span class="ic"><i class="bi bi-file-pdf"></i></span>
+                    <span><b>Витяг з ЄДР</b><small>реєстраційні дані, PDF</small></span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Фінансування -->
+        <div class="org-section-card">
+            <h2><i class="bi bi-coin"></i> Фінансування і прозорість</h2>
+            <p>Організація є неприбутковою. Статут прямо забороняє розподіл доходів між засновниками, членами, працівниками та органами управління. Джерела надходжень: добровільні внески і пожертвування фізичних та юридичних осіб, благодійна допомога, членські внески, гранти та кошти міжнародної технічної допомоги.</p>
+            <p class="mb-0">Кошти спрямовуються виключно на реалізацію статутної мети: програми та проєкти організації, адміністративні й операційні витрати, оплату праці та обов'язкові податки і збори. Керівник щороку звітує перед членами організації на загальних зборах.</p>
+        </div>
+
+        <!-- Контакти -->
+        <div class="org-section-card">
+            <h2><i class="bi bi-envelope"></i> Контакти</h2>
+            <p>Питання щодо діяльності організації: <a href="tel:+380937668373" style="color:var(--secondary-color); font-weight:600;">+380 93 766 83 73</a></p>
+            <p class="mb-0">По всім питанням проєкту «30 днів без алкоголю» звертайтесь до адміністратора в Telegram: <a href="https://telegram.me/Pilipchuk_NLP" target="_blank" style="color:var(--secondary-color); font-weight:600;">@Pilipchuk_NLP</a></p>
+        </div>
+
+        <!-- Кнопка повернення -->
+        <div class="text-center mb-4">
+            <a href="/" class="btn-register" style="padding:12px 35px; font-size:1rem;">
+                <i class="bi bi-arrow-left me-2"></i> Повернутися на головну
+            </a>
+        </div>
+
+ 
+    </div>
+
+    <!-- Футер (скопійовано з index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h5>30 днів без алкоголю</h5>
+                    <p>Особистий челендж із психологом Павлом Казар'яном</p>
+                    <div class="admin-contact mt-4">
+                        <h6>По всім питанням звертайтесь до адміністратора</h6>
+                        <a href="https://telegram.me/Pilipchuk_NLP" class="btn-telegram-admin" target="_blank">
+                            <i class="bi bi-telegram me-2"></i> Написати адміністратору
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4 text-md-end">
+                    <h5>Контакти</h5>
+                    <p>Адміністратор: @Pilipchuk_NLP</p>
+                </div>
+            </div>
+            <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
