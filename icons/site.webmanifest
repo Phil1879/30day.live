@@ -1,7 +1,6 @@
 {
-  "name": "Центр Джерело",
-  "short_name": "Джерело",
-  "description": "Центр Джерело",
+  "name": "30 днів без алкоголю",
+  "short_name": "30 днів",
   "icons": [
     {
       "src": "/icons/android-chrome-192x192.png",
@@ -14,8 +13,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
-  "display": "standalone",
-  "start_url": "/"
+  "theme_color": "#0a1420",
+  "background_color": "#0a1420",
+  "display": "browser"
 }
